@@ -1,0 +1,206 @@
+/* styles.css */
+body{
+    background-color: #141414;
+    margin-right: 0%;
+    margin-left: 0px;   
+    margin-top: 0px;
+}
+
+.cabecalho{
+    background-color: #0b0b0b;
+    padding: 5px;
+    display: flex;
+    justify-content: space-between;
+}
+
+.menu-nav {
+    display: flex;
+    align-items: center;
+}
+
+.menu {
+    list-style: none;
+    display: flex;
+    gap: 20px;
+}
+
+.menu li a {
+    color: #e8e8e8;
+    text-decoration: none;
+    font-weight: bolder;
+    font-size: 18px;
+    font-family: sans-serif, serif;
+}
+
+.menu li a:hover{
+    /* border-bottom: 2px solid rgb(225, 154, 12); */
+    color: rgb(225, 154, 12);
+}
+
+.hamburguer-menu {
+    display: none;
+    flex-direction: column;
+    justify-content: space-between;
+    cursor: pointer;
+    margin: 10px;
+}
+
+.linha {
+    width: 30px;
+    height: 3px;
+    background-color: #e8e8e8;
+    margin-bottom: 5px; /* Adicionando espaço entre as linhas */
+}
+
+.menu-aberto {
+    display: flex !important;
+    flex-direction: column;
+}
+
+@media only screen and (max-width: 600px) {
+    .menu {
+        display: none;
+    }
+
+    .hamburguer-menu {
+        display: flex;
+    }
+
+    .endereco,
+    .telefone {
+        text-align: center;
+    }
+
+    .rodape {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .float_wpp,
+    .float_insta,
+    .float_face {
+        margin-bottom: 20px;
+    }
+}
+
+.imagem-fundo img {
+    display: block;
+    margin: 0 auto;
+    max-width: 100%;
+}
+
+h1 {
+    color: rgb(234, 162, 19);
+    font-size: 30px;
+    text-align: center;
+    font-weight: 800;
+    margin-top: 20px;
+    font-family: sans-serif;
+}
+
+h2, h4 {
+    color: #e8e8e8;
+    text-align: center;
+    font-family: sans-serif;
+    font-weight: normal;
+}
+
+h3 {
+    color: #e8e8e8;
+    text-align: center;
+    font-family: sans-serif;
+    font-weight: normal;
+    font-style: italic;
+    font-size: 26px;
+}
+
+.endereco, .telefone {
+    color: black;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 14px;
+    font-weight: normal;
+    text-align: center;
+}
+
+.float_wpp{
+    margin-right: 0px;
+    text-align: center;
+    position: fixed;
+    top: 70px;
+    right: 20px;
+    z-index: 1000;
+}
+
+.float_insta{
+    margin-right: 0px;
+    text-align: center;
+    position: fixed;
+    top: 120px;
+    right: 20px;
+    z-index: 1000;
+}
+
+.float_face{
+    margin-right: 0px;
+    text-align: center;
+    position: fixed;
+    top: 170px;
+    right: 20px;
+    z-index: 1000;
+}
+
+.localiza {
+    width: 20px;
+    height: 20px;
+}
+
+.rodape img {
+    width: 35px;
+}
+
+.horario{
+    color: black;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 14px;
+    font-weight: normal;
+    text-align: center;
+}
+
+.funcionamento{
+    color: black;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 16px;
+    font-weight: normal;
+    text-align: center;
+    font-weight: bold;
+}
+
+.rodape_contato{
+    background-color: rgb(225, 154, 12, 70%);
+    padding: 30px;
+    margin-bottom: 0px;
+}
+
+hr{
+    margin: 25px 0;
+    border-color: black;
+}
+
+.final {
+    color: rgb(247, 230, 230, 40%);
+    font-family: sans-serif;
+    text-align: center;
+    font-size: 12px;
+}
+
+.img_informe{
+    width: 300px;
+    display: block;
+    margin: 20px auto;
+    border: solid 8px rgb(225, 154, 12, 70%);
+}
+
+#titulo_planos{
+    color: white;
+    font-weight: 600;
+}
